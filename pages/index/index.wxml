@@ -1,0 +1,3 @@
+<view class="pay_index">
+  <SearchInput></SearchInput>
+</view>
