@@ -1,2 +1,52 @@
-<!--pages/pay/index.wxml-->
-<text>pages/pay/index.wxml</text>
+<!-- 收获地址 -->
+<view class="revice_address_row">
+<!-- 当收获地址 存在  详细信息就显示-->
+  <view class="user_info_row">
+   <view class="user_info">
+     <view>{{address.userName}}</view>
+     <view>{{address.all}}</view>
+   </view>
+   <view class="user_phone">{{address.telNumber}}</view>
+  </view>
+</view>
+
+<!-- 购物车内容 -->
+<view class="cart_content">
+    <view class="cart_title">购物车</view>
+    <view class="cart_main">
+      <view class="cart_item"
+       wx:for="{{cart}}"
+       wx:key="goods_id"
+      >
+      <!-- 商品图片 -->
+      <navigator class="cart_img_wrap">
+        <image mode="widthFix" src="http://image2.suning.cn/uimg/b2c/newcatentries/0000000000-000000000826147951_1_400x400.jpg"></image>
+      </navigator>
+      <!-- 商品信息 -->
+      <view class="cart_info_wrap">
+        <view class="goods_name">海信(Hisense)LED50MU8600UC 50英寸 4K超高清智能电视 HDR超薄曲面</view>
+        <view class="goods_price_wrap">
+          <view class="goods_price">$6809</view>
+          <view class="cart_num_tool">
+            <view class="goods_num">X{{item.num}}</view>
+          </view>
+          </view>
+        </view>
+      </view>
+    </view>
+</view>
+
+<!-- 底部工具栏 -->
+<view class="footer_tool">
+  <!-- 总价格 ${{item.data.message.totalPrice}}-->
+  <view class="total_price_wrap">
+    <view class="total_price">
+      合计:<text class="total_price_text">$6809</text>
+      <view>包含运费</view>
+    </view>
+  </view>
+  <!-- 支付 -->
+  <view class="order_pay_wrap">
+    支付{{item.data.message.totalNum}}
+  </view>
+</view>

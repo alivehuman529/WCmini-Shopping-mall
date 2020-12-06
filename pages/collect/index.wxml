@@ -1,2 +1,20 @@
-<!--pages/collect/index.wxml-->
-<text>pages/collect/index.wxml</text>
+<Tabs tabs="{{tabs}}" bindtabsltemChange="handleTabsltemChange">
+  <block wx:if="{{tabs[0].isActive}}">
+      <view class="first_tab">
+     <navigator class="goods_item" wx:for="{{3}}">
+       <!-- 左侧 图片容器 -->
+       <view class="goods_img_wrap">
+         <image mode="widthFix" src="http://image4.suning.cn/uimg/b2c/newcatentries/0000000000-000000000606013705_1_400x400.jpg"></image>
+       </view>
+       <!-- 右侧 图片容器 -->
+       <view class="goods_info_wrap">
+         <view class="goods_name">海信(Hisense)LED50MU8600UC 50英寸 4K超高清智能电视 HDR超薄曲面</view>
+         <view class="goods_price">$8999</view>
+       </view>
+     </navigator>
+    </view>
+  </block>
+  <block wx:elif="{{tabs[1].isActive}}">1</block>
+  <block wx:elif="{{tabs[2].isActive}}">2</block>
+  <block wx:elif="{{tabs[3].isActive}}">3</block>
+</Tabs>

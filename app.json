@@ -11,14 +11,13 @@
     "pages/user/index",
     "pages/feedback/index",
     "pages/login/index",
-    "pages/auth/index",
     "pages/pay/index"
 
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#ed4450",
-    "navigationBarTitleText": "黑马优购",
+    "navigationBarTitleText": "商城",
     "navigationBarTextStyle":"white"
   },
   "tabBar": {
@@ -37,13 +36,13 @@
     {
       "pagePath": "pages/category/index",
       "text": "分类",
-      "iconPath": "icons/fenlei.png",
-      "selectedIconPath": "icons/fenlei01.png"
+      "iconPath": "icons/classify.png",
+      "selectedIconPath": "icons/classify1.png"
     },
     {
        "pagePath": "pages/cart/index",
         "text": "购物车",
-        "iconPath": "icons/gowu.png",
+        "iconPath": "icons/cark1.png",
         "selectedIconPath": "icons/gowu01.png"
       },
       {
@@ -54,6 +53,5 @@
        }
   ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
