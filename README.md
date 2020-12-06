@@ -1,0 +1,5 @@
+# WCmini-Shopping-mall
+小程序购物商场
+图标引用了iconfont图标库，在文件的style样式中
+请求网络接口数据的接口引用了es6的Promise语法，进行了异步封装请求，在该文件的request中
+对搜索框以及tabs按钮点击切换进行组件包装
